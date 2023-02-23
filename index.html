@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS BOOTSTRAP LINK -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- EXTERNAL CUSTOM CSS -->
+	<link rel="stylesheet" href="./styles.css">
+
+	<!-- MULTIPLE FONT STYLES FOR OPTIONS -->
+	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Hanken+Grotesk&family=Open+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+	<title>Web Developer Portfolio</title>
+</head>
+<body class="bg-landing">
+	<!-- Navbar Section Start -->
+	<nav class="navbar navbar-expand-lg bg-nav fixed-top">
+	  <a class="navbar-brand font-color-custom-nav" href="#">&lt; jl &gt;</a>
+	  <button class="navbar-toggler border-hamburger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link font-color-custom-nav" href="#home">Home<span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link font-color-custom-nav" href="#about-me">About Me</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link font-color-custom-nav" href="#gallery">Gallery</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link font-color-custom-nav" href="#contact">Contact Me</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+	<!-- Navbar Section End -->
+    
+    <!-- Landing Page -->
+    <div id="home" class="text-center d-flex flex-column d-sm-flex flex-sm-row justify-content-center align-items-center bg-landing text-light vh-100">
+
+        <div class="px-5">
+            <h1 class="h1-custom-resize font-color-custom-neon">
+                Hi, I'm Jun! <span class="blink"></span>
+            </h1>
+            <p class="font-role-resize font-color-custom-nav">
+            	Full Stack Web Developer
+        	</p>
+        </div>
+        <div class="px-2 py-2 bg-profile">
+        	<img width="300" src="./images/me.jpg" class="rounded-circle bg-white img-fluid border-img-custom"/>
+        </div>
+
+    </div>
+    <!-- End of Landing Page -->
+
+    <!-- About Me -->
+    <div id="about-me" class="text-center vh-100 container-fluid">
+    	<div class="pt-4">
+    		<h2 class="font-color-custom-neon pt-5">About Me</h2>
+    		<h3 class="font-color-custom-nav">From Construction Site to Website, Always a Builder</h3>
+    	</div>
+    	<div class="card-container d-flex flex-column d-lg-flex flex-lg-row justify-content-center">
+	    	<div class="card-left col-12 col-lg-5 pt-5 text-light text-justify order-2 order-lg-1">
+	    		<p>Back in the middle of October 2022, while at work, I had an epiphany. After 3 years of working as a site engineer, I realized the things I like about my career wasn't entirely about my career. I would spend countless hours trying to make sense of thousands of data while doing a structural analysis of a structure, recalibrate things and redo the test. I enjoyed AutoCAD and would dive on tiny details that most of my peers would not even bother to notice when doing a floor plan. I've spent many a countless nights on Excel trying to create a spreadsheet that would automatically design a structure's footing base on my inputs. On the very same job when I had the epiphany, I learned how to fabricate, build, and install modular cabinets while barely knowing the industry existed a month prior. What all these things had in common? I built things with my own hand. <span class="font-color-custom-nav">I was the best version of myself when I get into zone building things with my own hands</span> - something that is most likely not possible when working as a supervisor in a construction site. I realized I couldn't simply lead and let people build things, and though it was satisfying to be able to coordinate all resources and watch as a structure take form, nothing beats building things with your own hands. <span class="font-color-custom-nav">The sense of pride and ownership.</span> I've always wanted to be a programmer, so the next working day, I submitted my resignation to the surprise of my colleagues, and enrolled myself to Zuitt Coding Bootcamp. 4 months later, I am still building - from Construction Site to Website. </p>
+	    	</div>
+	    	<div class="card-right col-12 col-lg-5 order-1 order-lg-2">
+	    		<img src="./images/roofing_plan.jpg" class="img-fluid pt-5">
+	    	</div>
+	    </div>
+	<!-- End of ABOUT ME -->
+
+	<!-- GALLERY CAROUSEL -->
+	<div id="gallery" class="d-none d-md-block vh-100 pt-5">
+		<h2 class="font-color-custom-neon pt-4">Gallery</h2>
+		<div class="row d-none d-md-block mt-md-5">
+			<div class="offset-xl-3 col-xl-6">
+				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+						<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./images/registration_form.png" class="d-block w-100 img-fluid" alt="...">
+							<div class="carousel-caption d-none d-md-block font-color-custom-nav">
+								<h5>Registration Form</h5>
+								<p>One of the requirements for my responsive web design certification in freeCodeCamp.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./images/magazine_website.png" alt="magazine website" class="img-fluid">
+							<div class="carousel-caption d-none d-md-block font-color-custom-nav">
+								<h5>Magazine Website</h5>
+								<p>Magazine Website done as a part of my course in freeCodeCamp.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./images/tribute_page.png" class="d-block w-100 img-fluid" alt="...">
+							<div class="carousel-caption d-none d-md-block font-color-custom-nav">
+								<h5>Tribute Page</h5>
+								<p>A tribute page for a beloved dog, done by HTML and vanilla CSS.</p>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of GALLERY CAROUSEL -->
+
+	<!-- CONTACT US -->
+	<div id="contact" class="bg-landing min-vh-100 p-5 d-flex justify-content-center align-items-center flex-column">
+		<h2 class="font-color-custom-neon">Contact Me</h2>
+						
+		<div class="row mt-3 bg-form col-12 col-md-8 col-lg-8 col-xl-4">
+			<form class="p-2 container-fluid">
+							
+				<!-- Input for name -->
+				<div class="form-group">
+					<label for="form-name">Name</label>
+					<input type="text" class="form-control" id="form-name" placeholder="Your Name">
+				</div>
+
+				<!-- Input for email -->
+				<div class="form-group">
+					<label for="form-email">Email address</label>
+					<input type="email" class="form-control" id="form-email" placeholder="name@example.com">
+				</div>
+
+				<!-- Input for contact number -->
+				<div class="form-group">
+					<label for="form-contact-number">Contact Number</label>
+					<input type="number" class="form-control" id="form-contact-number" placeholder="+63 900 000 0000">
+				</div>
+
+				<!-- Input for concern dropdown -->
+				<div class="form-group">
+					<label for="form-concern">Concern</label>
+					<select class="form-control" id="form-concern">
+						<option>Quotation</option>
+						<option>Hire</option>
+						<option>General Inquiry</option>
+						<option>Other Works</option>
+					</select>
+				</div>
+
+				<!-- Input for message -->
+				<div class="form-group">
+					<label for="form-message">Message</label>
+					<textarea class="form-control" id="form-message" rows="3"></textarea>
+				</div>
+
+				<!-- Submit button trigger modal  -->
+				<button type="button" class="btn btn-dark text-light " data-toggle="modal" data-target="#exampleModal">Send Email
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header border-bottom border-dark">
+							    <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us!</h5>
+							    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							        <span aria-hidden="true">&times;</span>
+							    </button>
+							</div>
+							<div class="modal-body">
+							    Message Successfully Sent
+							</div>
+							<div class="modal-footer border-top">
+							    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<div class="fixed-bottom bg-nav font-color-custom-nav d-flex justify-content-center align-items-center">
+        <p class="pt-3 mr-2">&lt; jl &gt;</p>
+        <div id="socials">
+        	<a href="https://www.facebook.com/junlumbajr" target="_blank">
+        		<i class="fa-brands fa-facebook-f fa-lg pb-2 px-2"></i>
+        	</a>
+        	<a href="https://www.instagram.com/sober_demise/" target="_blank">
+        		<i class="fa-brands fa-instagram fa-lg pb-2 px-2"></i>
+        	</a>
+        	<a href="https://gitlab.com/Arrays-" target="_blank">
+        		<i class="fa-brands fa-gitlab fa-lg pb-2 px-2"></i>
+        	</a>
+        </div>
+    </div>
+    <!-- End of FOOTER -->
+
+	<!-- BOOTSTRAP JS DEPENDENCIES -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- FONT AWESOME ICONS JS EMBED CODE -->
+	<script src="https://kit.fontawesome.com/b0fe0cedd4.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

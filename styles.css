@@ -1,0 +1,99 @@
+/* BORDER CHECK TO AVOID OVERFLOW */
+.border-check {
+    border: 1px solid red;
+}
+
+/* CUSTOM BACKGROUND */
+.bg-nav {
+	background-color: #192841;
+}
+
+.bg-landing {
+	background-color: #152238;
+}
+
+.bg-form {
+    background: linear-gradient(45deg,
+        #00eaff 0%,
+        #00d0ff 25%,
+        #49b0ff 50%,
+        #a787ff 75%,
+        #da55cc 100% );
+}
+
+.bg-profile {
+    background: #192841;
+    border-radius: 50%;
+}
+
+/* CUSTOM FONT COLOR */
+.font-color-custom-neon {
+  	background: -webkit-linear-gradient(45deg,
+  		#00eaff 0%,
+  		#00d0ff 25%,
+  		#49b0ff 50%,
+  		#a787ff 75%,
+  		#da55cc 100% );
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.font-color-custom-nav {
+	color: #16dbff;
+}
+
+/* CUSTOM TYPING EFFECT (BLINKING) */
+.blink {
+    font-family: monospace;/* Web-safe typewriter-like font */
+    overflow: hidden;/* Ensures the content is not revealed until the animation */
+    border-right: .17em solid pink;/* The typewriter cursor */
+    white-space: nowrap;/* Keeps the content on a single line */
+    margin: 0 auto;/* Gives that scrolling effect as the typing happens */
+    letter-spacing: .17em;/* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+/* The typewriter cursor effect */
+@keyframes blinking-cursor {
+    from,
+   	to {
+        border-color: transparent
+    }
+    50% {
+        border-color: pink;
+    }
+}
+
+/* CUSTOM BORDER TO LANDING PAGE PROFILE PIC */
+.border-img-custom {
+	border: 2px solid #16dbff;
+	border-radius: 50%;
+}
+
+/* PULSATING CIRCLE ON PROFILE PIC */
+	/* Will add later */
+
+
+/* GOOGLE FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+* {
+	font-family: 'Chakra Petch', sans-serif;
+
+}
+
+/* RESPONSIVE FONT SIZES */
+.h1-custom-resize {
+	font-size: clamp(3rem, 9vw, 8rem);
+}
+
+.font-role-resize {
+	font-size: clamp(1.5rem, 2.8vw, 3rem);
+}
